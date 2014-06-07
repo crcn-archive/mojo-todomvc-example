@@ -4,5 +4,8 @@
  */
 
 module.exports = function (app) {
-  // TODO
+  app.models.register({
+    todo  : require("./todo"),
+    todos : require("./todos")
+  });
 };
