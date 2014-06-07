@@ -1,10 +1,7 @@
-<section id="todoapp">
-  {{ html: sections.header }}
-  {{ html: sections.todos  }}
-  {{ html: sections.footer }}
-</section>
+<h4>Welcome to Mojo.js, What's your name?</h4>
 
+<input type="text" data-bind="{{ model: <~>name }}"></input>
 
-<footer id="info">
-  <p>Double-click to edit a todo</p>
-</footer>
+{{#if:name}}
+  <h4>Welcome {{name}}!!</h4>
+{{/}}
