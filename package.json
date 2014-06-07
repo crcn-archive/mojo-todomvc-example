@@ -21,9 +21,10 @@
     "mojo-application": "0.0.x",
     "mojo-paperclip": "0.4.x",
     "mojo-views": "0.0.x",
-    "mojo-router": "^0.2.2",
-    "mojo-mediator": "0.0.4",
-    "mkdirp": "^0.5.0"
+    "mojo-router": "0.2.x",
+    "mojo-mediator": "0.0.x",
+    "mkdirp": "0.5.0",
+    "mojo-models": "0.0.x"
   },
   "devDependencies": {
     "expect.js": "0.3.1",

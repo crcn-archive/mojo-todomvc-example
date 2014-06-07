@@ -8,7 +8,7 @@ module.exports = Application.extend({
     this.use(require("mojo-mediator"));
 
     // model - TODO
-    // this.use(require("mojo-models"))
+    this.use(require("mojo-models"))
 
     // view controller
     this.use(require("mojo-views"))
