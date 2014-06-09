@@ -15,6 +15,7 @@ module.exports = views.Base.extend({
     items: {
       type: "list",
       source: "todos",
+      filter: "models.todosFilter",
       modelViewClass: require("./todo")
     }
   }

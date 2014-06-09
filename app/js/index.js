@@ -6,6 +6,7 @@ module.exports = Application.extend({
 
     // globally accessible functions
     this.use(require("mojo-mediator"));
+    this.use(require("mojo-bootstrap"))
 
     // model - TODO
     this.use(require("mojo-models"))
@@ -17,7 +18,7 @@ module.exports = Application.extend({
     this.use(require("mojo-paperclip"));
 
     // routes - TODO
-    // this.use(require("mojo-router"));
+    this.use(require("mojo-router"));
 
 
     this.use(require("./commands"));
@@ -26,7 +27,7 @@ module.exports = Application.extend({
     this.use(require("./templates"));
     this.use(require("./routes"));
   },
-  didInitialize: function (options) {
+  didBootstrap: function (options) {
     $(options.element).append(this.views.create("main", {
         todos: this.models.create("todos", {
             data: [

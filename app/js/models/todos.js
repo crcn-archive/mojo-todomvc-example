@@ -1,6 +1,7 @@
 var models = require("mojo-models");
 
 module.exports = models.Collection.extend({
+  modelType: require("./todo"),
   bindings: {
     "@each.completed": {
       "numCompleted": {
@@ -19,7 +20,6 @@ module.exports = models.Collection.extend({
       }
     }
   },
-  modelType: require("./todo"),
   toggleCompleted: function () {
     var self = this;
     this.each(function (todo) {
