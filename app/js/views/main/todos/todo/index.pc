@@ -1,0 +1,9 @@
+<li data-bind="{{
+  css: {
+    completed: model.completed
+  }
+}}">
+  <input type="checkbox" class="toggle" data-bind="{{ model: <~>model.completed }}" />
+  <label>{{ model.text }}</label>
+  <button class="destroy" data-bind="{{ onClick: destroy() }}"></button>
+</li>

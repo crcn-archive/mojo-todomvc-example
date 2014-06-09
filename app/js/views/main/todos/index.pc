@@ -1,0 +1,9 @@
+<section id="main">
+
+  <ul id="todo-list">
+    {{ html: sections.items }}
+  </ul>
+
+  <input type="checkbox" id="toggle-all" data-bind="{{ onClick: toggleAll( )}}" />
+
+</section>
