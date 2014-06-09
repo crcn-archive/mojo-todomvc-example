@@ -7,7 +7,7 @@
     "test": "cortado start",
     "start": "./node_modules/.bin/mojo build ./app/js/entry.js --output=build/app.min.js --serve=build --port=8085",
     "build": "./node_modules/.bin/mojo build ./app/js/entry.js -m --output=build/app.min.js",
-    "hotswap": "./node_modules/.bin/ditto-proxy http://127.0.0.1:8085 --port=8090 --verbose --watch='./build/**'"
+    "hotswap": "./node_modules/.bin/ditto-proxy http://127.0.0.1:8085 --port=8090 --verbose --watch='./app/**'"
   },
   "repository": {
     "type": "git",
@@ -20,7 +20,7 @@
   "dependencies": {
     "mojo-application": "0.0.x",
     "mojo-paperclip": "0.4.x",
-    "mojo-views": "0.0.x",
+    "mojo-views": "0.0.6",
     "mojo-router": "0.2.x",
     "mojo-mediator": "0.0.x",
     "mkdirp": "0.5.0",

@@ -5,5 +5,5 @@
 }}">
   <input type="checkbox" class="toggle" data-bind="{{ model: <~>model.completed }}" />
   <label>{{ model.text }}</label>
-  <button class="destroy" data-bind="{{ onClick: destroy() }}"></button>
+  <button class="destroy" data-bind="{{ onClick: model.remove() }}"></button>
 </li>

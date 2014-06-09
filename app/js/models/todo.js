@@ -1,5 +1,9 @@
 var models = require("mojo-models");
 
 module.exports = models.Base.extend({
-  persist: {}
+  persist: {
+    del: function(complete) {
+      complete();
+    }
+  }
 });

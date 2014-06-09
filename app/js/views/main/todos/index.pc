@@ -4,6 +4,6 @@
     {{ html: sections.items }}
   </ul>
 
-  <input type="checkbox" id="toggle-all" data-bind="{{ onClick: toggleAll( )}}" />
+  <input type="checkbox" id="toggle-all" data-bind="{{ onClick: todos.toggleCompleted() }}" />
 
 </section>

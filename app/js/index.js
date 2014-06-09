@@ -27,6 +27,13 @@ module.exports = Application.extend({
     this.use(require("./routes"));
   },
   didInitialize: function (options) {
-    $(options.element).append(this.views.create("main").render());
+    $(options.element).append(this.views.create("main", {
+        todos: this.models.create("todos", {
+            data: [
+                { text: "Walk Dog" },
+                { text: "Clean House" }
+            ]
+        })
+    }).render());
   }
 });
