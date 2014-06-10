@@ -1,5 +1,7 @@
 ## Mojo TodoMVC [![Build Status](https://travis-ci.org/classdojo/mojo-todomvc-example.svg)](https://travis-ci.org/classdojo/mojo-todomvc-example)
 
+http://mojo-todomvc-example.herokuapp.com/
+
 ## Requirements
 
 - Node.js
