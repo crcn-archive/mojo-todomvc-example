@@ -15,7 +15,6 @@ module.exports = models.Base.extend({
     }
   },
   serialize: function () {
-
     return {
       _id: this._id,
       text: this.text,
