@@ -1,5 +1,7 @@
 var Application = require("mojo-application");
 
+require("paperclip");
+
 module.exports = Application.extend({
   registerPlugins: function () {
 

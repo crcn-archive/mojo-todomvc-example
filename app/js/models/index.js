@@ -5,6 +5,7 @@
 
 module.exports = function (app) {
   app.models.register({
-    todos : require("./todos")
+    todos : require("./todos"),
+    todo  : require("./todo")
   });
 };

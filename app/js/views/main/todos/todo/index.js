@@ -11,14 +11,14 @@ module.exports = views.Base.extend({
    */
    
   save: function () {
-    this.toggleEdit();
+    this.toggleEdit(false);
     this.get("model").save();
   },
 
   /**
    */
 
-  toggleEdit: function () {
-    this.set("edit", !this.edit);
+  toggleEdit: function (value) {
+    this.set("edit", arguments.length ? value : !this.edit);
   }
 });
