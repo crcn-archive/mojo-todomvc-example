@@ -1,0 +1,24 @@
+{
+  "name": "mojojs",
+  "version": "0.9.0",
+  "description": "",
+  "main": "./lib/index.js",
+  "scripts": {
+    "build": "make all"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://crcn@github.com/classdojo/mojo.js.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/classdojo/mojo.js/issues"
+  },
+  "homepage": "https://github.com/classdojo/mojo.js",
+  "dependencies": {
+    "mojo-application": "0.0.8",
+    "mojo-paperclip": "0.4.4",
+    "mojo-views": "0.0.3"
+  }
+}

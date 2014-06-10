@@ -1,4 +1,4 @@
-ALL_TESTS = $(shell find ./test/unit ./test/e2e -name "*-test.js")
+ALL_TESTS = $(shell find ./test/unit -name "*-test.js")
 REPORTER="dot"
 ONLY=.
 

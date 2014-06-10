@@ -1,3 +1,5 @@
+## Mojo TodoMVC [![Build Status](https://travis-ci.org/classdojo/mojo-todomvc-example.svg)](https://travis-ci.org/classdojo/mojo-todomvc-example)
+
 ## Requirements
 
 - Node.js
@@ -35,3 +37,9 @@ npm run hotswap
 ```
 
 Note that the above command assumes that you're already running `npm start`.
+
+## Testing
+
+```
+npm test
+```
