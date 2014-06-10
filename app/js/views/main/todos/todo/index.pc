@@ -3,7 +3,7 @@
     completed: model.completed
   }
 }}">
-  <input type="checkbox" class="toggle" data-bind="{{ model: <~>model.completed }}" />
+  <input type="checkbox" class="toggle" data-bind="{{ model: <~model.completed, onMouseUp: model.toggleCompleted() }}" />
   <label>{{ model.text }}</label>
   <button class="destroy" data-bind="{{ onClick: model.remove() }}"></button>
 </li>

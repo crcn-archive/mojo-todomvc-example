@@ -1,4 +1,5 @@
-var models = require("mojo-models");
+var models = require("mojo-models"),
+ls         = require("./persist").localStorage;
 
 module.exports = models.Collection.extend({
   modelType: require("./todo"),
@@ -24,6 +25,7 @@ module.exports = models.Collection.extend({
     var self = this;
     this.each(function (todo) {
       todo.set("completed", !self.allCompleted);
+      todo.save();
     });
   },
   clearCompleted: function () { 
@@ -33,5 +35,6 @@ module.exports = models.Collection.extend({
         todo.remove();
       }
     }
-  }
+  },
+  persist: ls.collection("todos")
 });

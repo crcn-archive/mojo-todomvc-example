@@ -28,13 +28,14 @@ module.exports = Application.extend({
     this.use(require("./routes"));
   },
   didBootstrap: function (options) {
+
+    var todos = this.models.create("todos", {
+    });
+
+    todos.load();
+
     $(options.element).append(this.views.create("main", {
-        todos: this.models.create("todos", {
-            data: [
-                { text: "Walk Dog" },
-                { text: "Clean House" }
-            ]
-        })
+        todos: todos
     }).render());
   }
 });
