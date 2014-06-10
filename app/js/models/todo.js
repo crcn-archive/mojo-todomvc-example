@@ -6,8 +6,8 @@ module.exports = models.Base.extend({
   /**
    */
 
-  toggleCompleted: function () {
-    this.set("completed", !this.completed);
+  toggleCompleted: function (value) {
+    this.set("completed", arguments.length ? !!value : !this.completed);
     this.save();
   },
 

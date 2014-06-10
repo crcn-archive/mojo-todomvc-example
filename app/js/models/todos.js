@@ -36,8 +36,7 @@ module.exports = models.Collection.extend({
   toggleCompleted: function () {
     var self = this;
     this.each(function (todo) {
-      todo.set("completed", !self.allCompleted);
-      todo.save();
+      todo.toggleCompleted(!self.allCompleted);
     });
   },
 

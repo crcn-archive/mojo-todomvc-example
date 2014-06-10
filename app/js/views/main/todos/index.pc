@@ -5,7 +5,7 @@
   </ul>
 
   {{#if: todos.length}}
-    <input type="checkbox" id="toggle-all" data-bind="{{ model: <~todos.allCompleted, onMouseUp: todos.toggleCompleted() }}" />
+    <input type="checkbox" id="toggle-all" data-bind="{{ model: <~todos.allCompleted, onClick: todos.toggleCompleted() }}" />
   {{/}}
 
 </section>
