@@ -26,7 +26,7 @@ test/
 ## Installation
 
 ```
-git clone git@github.com:classdojo/mojo-starter.git && cd mojo-starter && npm install;
+git clone git@github.com:classdojo/mojo-todomvc-example.git && cd mojo-todomvc-example && npm install;
 ```
 
 ## Building
