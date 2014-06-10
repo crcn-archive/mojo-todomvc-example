@@ -3,21 +3,20 @@ var Application = require("mojo-application");
 module.exports = Application.extend({
   registerPlugins: function () {
 
-
     // globally accessible functions
     this.use(require("mojo-mediator"));
     this.use(require("mojo-bootstrap"))
 
-    // model - TODO
+    // models
     this.use(require("mojo-models"))
 
     // view controller
     this.use(require("mojo-views"))
 
-    // view
+    // templates
     this.use(require("mojo-paperclip"));
 
-    // routes - TODO
+    // HTTP router
     this.use(require("mojo-router"));
 
 
@@ -29,8 +28,7 @@ module.exports = Application.extend({
   },
   didBootstrap: function (options) {
 
-    var todos = this.models.create("todos", {
-    });
+    var todos = this.models.create("todos");
 
     todos.load();
 
