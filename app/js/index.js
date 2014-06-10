@@ -19,7 +19,6 @@ module.exports = Application.extend({
     // HTTP router
     this.use(require("mojo-router"));
 
-
     this.use(require("./commands"));
     this.use(require("./models"));
     this.use(require("./views"));

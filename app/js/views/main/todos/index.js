@@ -1,5 +1,4 @@
-var views = require("mojo-views"),
-bindable  = require("bindable");
+var views = require("mojo-views");
 
 module.exports = views.Base.extend({
 

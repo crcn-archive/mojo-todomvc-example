@@ -2,7 +2,15 @@ var models = require("mojo-models"),
 ls         = require("./persist").localStorage;
 
 module.exports = models.Collection.extend({
+
+  /**
+   */
+
   modelType: require("./todo"),
+
+  /**
+   */
+
   bindings: {
     "@each.completed": {
       "numCompleted": {
@@ -21,6 +29,10 @@ module.exports = models.Collection.extend({
       }
     }
   },
+
+  /**
+   */
+
   toggleCompleted: function () {
     var self = this;
     this.each(function (todo) {
@@ -28,6 +40,10 @@ module.exports = models.Collection.extend({
       todo.save();
     });
   },
+
+  /**
+   */
+
   clearCompleted: function () { 
     for (var i = this.length; i--;) {
       var todo = this.at(i);
@@ -36,5 +52,9 @@ module.exports = models.Collection.extend({
       }
     }
   },
+
+  /**
+   */
+   
   persist: ls.collection("todos")
 });
