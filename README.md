@@ -12,7 +12,7 @@ app/
     views/ - all view controllers & templates displayed to the user
     routes/ - all HTTP routes. controls the view state of the application
     models/ - all data models for the application. Controls all information.
-    commands/ - basic global commands for the application. Mostly scripts that help bootstrap the app.
+    commands/ - global commands for the application.
 build/ - output folder where app is built to
 test/
   unit/ - unit test files. These run in node.
