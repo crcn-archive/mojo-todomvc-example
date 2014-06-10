@@ -2,6 +2,10 @@
 
 http://mojo-todomvc-example.herokuapp.com/
 
+## Requirements
+
+- [Node.js](http://nodejs.org/) - needed for unit testing and [browserify](http://browserify.org/)
+
 ## Project Structure
 
 ```
@@ -17,12 +21,6 @@ build/ - output folder where app is built to
 test/
   unit/ - unit test files. These run in node.
 ```
-
-
-## Requirements
-
-- Node.js
-- Git
 
 
 ## Installation
