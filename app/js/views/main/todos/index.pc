@@ -4,6 +4,8 @@
     {{ html: sections.items }}
   </ul>
 
-  <input type="checkbox" id="toggle-all" data-bind="{{ onClick: todos.toggleCompleted() }}" />
+  {{#if: todos.length}}
+    <input type="checkbox" id="toggle-all" data-bind="{{ model: <~todos.allCompleted, onMouseUp: todos.toggleCompleted() }}" />
+  {{/}}
 
 </section>
