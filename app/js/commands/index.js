@@ -3,5 +3,6 @@
  */
 
 module.exports = function (app) {
-  // TODO
+  app.use(require("./load/todos"));
+  app.use(require("./load/mainView"));
 };

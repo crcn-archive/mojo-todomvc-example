@@ -25,15 +25,5 @@ module.exports = Application.extend({
     this.use(require("./views"));
     this.use(require("./templates"));
     this.use(require("./routes"));
-  },
-  didBootstrap: function (options) {
-
-    var todos = this.models.create("todos");
-
-    todos.load();
-
-    $(options.element).append(this.views.create("main", {
-        todos: todos
-    }).render());
   }
 });
