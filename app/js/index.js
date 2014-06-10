@@ -24,7 +24,6 @@ module.exports = Application.extend({
     this.use(require("./commands"));
     this.use(require("./models"));
     this.use(require("./views"));
-    this.use(require("./templates"));
     this.use(require("./routes"));
   }
 });
