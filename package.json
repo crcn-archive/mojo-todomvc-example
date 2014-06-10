@@ -1,7 +1,6 @@
 {
-  "name": "playground",
+  "name": "Mojo TodoMVC Example",
   "version": "0.1.0",
-  "description": "mojo-boilerplate ================",
   "main": "./app/js/index.js",
   "scripts": {
     "start": "./node_modules/.bin/mojo build ./app/js/entry.js --output=build/app.min.js --serve=build --port=8085",
