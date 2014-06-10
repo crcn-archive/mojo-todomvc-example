@@ -1,5 +1,5 @@
 {
-  "name": "Mojo TodoMVC Example",
+  "name": "mojo-todomvc-example",
   "version": "0.1.0",
   "main": "./app/js/index.js",
   "scripts": {
