@@ -26,9 +26,9 @@
     "mkdirp": "0.5.0",
     "mojo-models": "0.0.x",
     "mojo-bootstrap": "0.0.x",
-    "sift": "0.0.17",
-    "store": "^1.3.16",
-    "nedb": "^0.10.5"
+    "sift": "0.0.x",
+    "store": "1.3.16",
+    "pouchdb": "2.2.3"
   },
   "devDependencies": {
     "expect.js": "0.3.1",
