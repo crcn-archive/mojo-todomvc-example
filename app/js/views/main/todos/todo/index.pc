@@ -1,9 +1,16 @@
 <li data-bind="{{
   css: {
-    completed: model.completed
+    completed: model.completed,
+    editing: edit
   }
 }}">
-  <input type="checkbox" class="toggle" data-bind="{{ model: <~model.completed, onMouseUp: model.toggleCompleted() }}" />
-  <label>{{ model.text }}</label>
-  <button class="destroy" data-bind="{{ onClick: model.remove() }}"></button>
+
+  {{#if:edit}}
+    <input type="text" class="edit" data-bind="{{ model: <~>model.text, onEnter: save(), focus: true }}" />
+  {{/else}}
+    <input type="checkbox" class="toggle" data-bind="{{ model: <~model.completed, onMouseUp: model.toggleCompleted() }}" />
+    <label data-bind="{{onDblClick:edit=true}}">{{ ~model.text }}</label>
+    <button class="destroy" data-bind="{{ onClick: model.remove() }}"></button>
+  {{/}}
+  
 </li>
