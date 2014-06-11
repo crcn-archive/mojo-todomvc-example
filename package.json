@@ -28,10 +28,10 @@
     "sift": "0.0.x",
     "pouchdb": "2.2.3",
     "mojo-cli": "0.0.x",
-    "bindable": "0.5.x"
+    "bindable": "0.5.x",
+    "paperclip": "0.3.x"
   },
   "devDependencies": {
-    "paperclip": "0.3.x",
     "expect.js": "0.3.1",
     "mocha": "1.20.1",
     "ditto": "0.0.x",
