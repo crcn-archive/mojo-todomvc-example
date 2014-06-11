@@ -37,6 +37,7 @@
     "mocha": "1.20.1",
     "ditto": "0.0.x",
     "sinon": "^1.10.2",
-    "istanbul": "^0.2.11"
+    "istanbul": "^0.2.11",
+    "noselector": "0.0.x"
   }
 }
