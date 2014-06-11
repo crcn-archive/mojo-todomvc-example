@@ -1,7 +1,7 @@
 var expect  = require("expect.js"),
 views       = require("mojo-views"),
-Application = require("../../../app/js"),
-TodosView   = require("../../../app/js/views/main/todos"),
+Application = require("../../../"+process.env.APP_DIR+"/js"),
+TodosView   = require("../../../"+process.env.APP_DIR+"/js/views/main/todos"),
 sinon       = require("sinon");
 
 describe("unit/views/todos#", function () {

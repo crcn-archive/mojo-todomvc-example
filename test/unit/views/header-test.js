@@ -1,7 +1,7 @@
 var expect  = require("expect.js"),
 views       = require("mojo-views"),
-Application = require("../../../app/js"),
-HeaderView  = require("../../../app/js/views/main/header"),
+Application = require("../../../"+process.env.APP_DIR+"/js"),
+HeaderView  = require("../../../"+process.env.APP_DIR+"/js/views/main/header"),
 sinon       = require("sinon");
 
 describe("unit/views/header#", function () {
@@ -13,7 +13,14 @@ describe("unit/views/header#", function () {
   });
 
   describe("template", function () {
-    // TODO
+    it("can add a new todo item", function () {
+      var todos = app.models.create("todos");
+      var header = new HeaderView({ todos: todos }, app);
+      var addNewTodoStub = sinon.stub(header, "addNewTodo");
+      header.render();
+      header.$("input").val("hello world").trigger("change").trigger("keydown", { keyCode: 13 });
+      expect(addNewTodoStub.callCount).to.be(1);
+    })
   });
 
   describe("controller", function () {

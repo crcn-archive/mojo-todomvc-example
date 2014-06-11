@@ -1,7 +1,7 @@
 var expect  = require("expect.js"),
 views       = require("mojo-views"),
-Application = require("../../../app/js"),
-TodoView    = require("../../../app/js/views/main/todos/todo"),
+Application = require("../../../"+process.env.APP_DIR+"/js"),
+TodoView    = require("../../../"+process.env.APP_DIR+"/js/views/main/todos/todo"),
 sinon       = require("sinon");
 noselector = require("noselector");
 

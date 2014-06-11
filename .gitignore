@@ -3,3 +3,4 @@ node_modules
 todos
 .DS_Store
 coverage
+cov

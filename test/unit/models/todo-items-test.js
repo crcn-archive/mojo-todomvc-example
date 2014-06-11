@@ -1,6 +1,6 @@
 var expect  = require("expect.js"),
 views       = require("mojo-views"),
-Application = require("../../../app/js"),
+Application = require("../../../"+process.env.APP_DIR+"/js"),
 sinon       = require("sinon");
 
 // monkeypatch
