@@ -26,7 +26,6 @@
     "mojo-models": "0.0.x",
     "mojo-bootstrap": "0.0.x",
     "sift": "0.0.x",
-    "store": "1.3.16",
     "pouchdb": "2.2.3",
     "mojo-cli": "0.0.x",
     "bindable": "0.5.x"
