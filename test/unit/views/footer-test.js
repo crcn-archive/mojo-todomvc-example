@@ -8,10 +8,8 @@ describe("unit/views/footer#", function () {
 
   var app;
 
-  beforeEach(function (next) {
+  beforeEach(function () {
     app = new Application();
-    app.didBootstrap = next;
-    app.initialize();
   });
 
   describe("template", function () {
@@ -29,25 +27,30 @@ describe("unit/views/footer#", function () {
     });
 
     "allTodos activeTodos completedTodos".split(" ").forEach(function(dataHref) {
-
-      // navigate, and 
-      xit("can navigate to " + dataHref + " when selected");
+      it("can navigate to " + dataHref + " when selected", function () {
+        var todos = app.models.create("todos");
+        todos.create({ completed: true });
+        var footer = new FooterView({ todos: todos }, app);
+        footer.render();
+        footer.$("a[data-href='"+dataHref+"']").click();
+        expect(app.router.get("_location.route.options.name")).to.be(dataHref);
+      });
     });
 
-    xit("shows the 'clear completed' button when there are completed items", function () {
+    it("shows the 'clear completed' button when there are completed items", function () {
       var todos = app.models.create("todos");
       todos.create({ completed: true });
       var footer = new FooterView({todos: todos}, app);
-      expect(footer.render().toString()).to.contain("Clear Completed (1)");
+      expect(footer.render().toString()).to.contain("Clear completed (1)");
     });
 
-    xit("shows the correct number of todos left");
-
+    it("shows the correct number of todos left", function () {
+      var todos = app.models.create("todos");
+      todos.create({ completed: true });
+      todos.create({ completed: false });
+      todos.create({ completed: false });
+      var footer = new FooterView({todos: todos}, app);
+      expect(footer.render().toString()).to.contain("<strong>2</strong> todos left");
+    });
   });
-
-  describe("controller", function () {
-    // TODO
-    xit("inherits todos from the a parent view");
-  });
-
 });

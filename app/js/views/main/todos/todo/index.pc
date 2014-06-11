@@ -9,8 +9,8 @@
     <input type="text" class="edit" data-bind="{{ model: <~>model.text, onEnter: save(), focus: true }}" />
   {{/else}}
     <input type="checkbox" class="toggle" data-bind="{{ model: <~model.completed, onClick: model.toggleCompleted() }}" />
-    <label data-bind="{{onDblClick:toggleEdit()}}">{{ ~model.text }}</label>
+    <label data-bind="{{onDblClick:toggleEdit()}}">{{ model.text }}</label>
     <button class="destroy" data-bind="{{ onClick: model.remove() }}"></button>
   {{/}}
-  
+
 </li>

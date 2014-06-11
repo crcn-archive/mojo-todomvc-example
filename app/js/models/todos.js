@@ -35,15 +35,16 @@ module.exports = models.Collection.extend({
 
   toggleCompleted: function () {
     var self = this;
+    var allCompleted = this.allCompleted;
     this.each(function (todo) {
-      todo.toggleCompleted(!self.allCompleted);
+      todo.toggleCompleted(!allCompleted);
     });
   },
 
   /**
    */
 
-  clearCompleted: function () { 
+  clearCompleted: function () {
     for (var i = this.length; i--;) {
       var todo = this.at(i);
       if (todo.completed) {
@@ -54,6 +55,6 @@ module.exports = models.Collection.extend({
 
   /**
    */
-   
+
   persist: ls.collection("todos")
 });

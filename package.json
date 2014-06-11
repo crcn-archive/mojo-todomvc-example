@@ -19,7 +19,7 @@
   "dependencies": {
     "mojo-application": "0.0.x",
     "mojo-paperclip": "0.4.x",
-    "mojo-views": "0.0.6",
+    "mojo-views": "0.0.x",
     "mojo-router": "0.3.x",
     "mojo-mediator": "0.0.x",
     "mkdirp": "0.5.0",
@@ -36,6 +36,7 @@
     "expect.js": "0.3.1",
     "mocha": "1.20.1",
     "ditto": "0.0.x",
-    "sinon": "^1.10.2"
+    "sinon": "^1.10.2",
+    "istanbul": "^0.2.11"
   }
 }

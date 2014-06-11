@@ -58,7 +58,6 @@ describe("unit/views/header#", function () {
 
       parent.setChild("header", header);
 
-
       var createStub = sinon.stub(todos, "create").returns({ save: function(){} });
 
       header.newTodoText = "hello";

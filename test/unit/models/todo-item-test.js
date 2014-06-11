@@ -11,8 +11,8 @@ describe("unit/models/todos#", function () {
     app = new Application();
   });
 
-  it("can create a new todos collection", function () {
-    app.models.create("todos");
+  it("can create a new todo item", function () {
+    app.models.create("todos").create();
   });
 
   it("properly deserializes a todo item", function () {

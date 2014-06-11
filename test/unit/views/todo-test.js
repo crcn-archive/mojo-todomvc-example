@@ -3,6 +3,7 @@ views       = require("mojo-views"),
 Application = require("../../../app/js"),
 TodoView    = require("../../../app/js/views/main/todos/todo"),
 sinon       = require("sinon");
+noselector = require("noselector");
 
 describe("unit/views/todo#", function () {
 
@@ -14,11 +15,45 @@ describe("unit/views/todo#", function () {
 
   describe("template", function () {
     // TODO
-    xit("shows the correct edit state");
-    xit("focuses in the input field on edit state");
-    xit("adds a 'completed' class when model.completed is true");
-    xit("can destroy a todo item");
-    xit("can toggle the todo completion");
+    it("shows the correct edit state", function () {
+        var todo = app.models.create("todos").create({ text: "ab" });
+        var todoView = new TodoView({ model: todo }, app);
+        todoView.set("edit", true);
+        todoView.render();
+        expect(todoView.$("li").attr("class")).to.contain("editing");
+        expect(todoView.$("button").length).to.be(0);
+        todoView.set("edit", false);
+        expect(todoView.$("li").attr("class")).not.to.contain("editing");
+        expect(todoView.$("button").length).to.be(1);
+    });
+
+    it("adds a 'completed' class when model.completed is true", function () {
+        var todo = app.models.create("todos").create({ text: "ab" });
+        var todoView = new TodoView({ model: todo }, app);
+        todoView.render();
+        todo.set("completed", true);
+        expect(todoView.$("li").attr("class")).to.contain("completed");
+        todo.set("completed", false);
+        expect(todoView.$("li").attr("class")).not.to.contain("completed");
+    });
+
+    it("can destroy a todo item", function () {
+        var todo = app.models.create("todos").create({ text: "ab" });
+        var removeStub = sinon.stub(todo, "remove");
+        var todoView = new TodoView({ model: todo }, app);
+        todoView.render();
+        todoView.$("button").click();
+        expect(removeStub.callCount).to.be(1);
+    });
+
+    it("can toggle the todo completion", function () {
+        var todo = app.models.create("todos").create({ text: "ab" });
+        var toggleCompletedStub = sinon.stub(todo, "toggleCompleted");
+        var todoView = new TodoView({ model: todo }, app);
+        todoView.render();
+        todoView.$(".toggle").click();
+        expect(toggleCompletedStub.callCount).to.be(1);
+    });
   });
 
   describe("controller", function () {
