@@ -30,7 +30,7 @@ exports.model = function () {
       create: function (complete) {
         var data = this.serialize();
         data._id = Date.now() + "_" + Math.round(Math.random() * 999999);
-        storage.put(data);
+        if (process.browser) storage.put(data);
         complete(null, data);
       },
       update: function (complete) {
