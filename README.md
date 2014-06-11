@@ -2,6 +2,11 @@
 
 http://mojo-todomvc-example.herokuapp.com/
 
+### Mojo.js Resources
+
+- [documentation](http://mojo-docs.herokuapp.com/)
+- [starter kit](https://github.com/classdojo/mojo-starter)
+
 ### Requirements
 
 - [Node.js](http://nodejs.org/) - needed for unit testing and [browserify](http://browserify.org/)
