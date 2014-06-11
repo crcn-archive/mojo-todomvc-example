@@ -1,12 +1,28 @@
-## Mojo TodoMVC [![Build Status](https://travis-ci.org/classdojo/mojo-todomvc-example.svg)](https://travis-ci.org/classdojo/mojo-todomvc-example)
+### Mojo TodoMVC [![Build Status](https://travis-ci.org/classdojo/mojo-todomvc-example.svg)](https://travis-ci.org/classdojo/mojo-todomvc-example)
 
 http://mojo-todomvc-example.herokuapp.com/
 
-## Requirements
+### Requirements
 
 - [Node.js](http://nodejs.org/) - needed for unit testing and [browserify](http://browserify.org/)
 
-## Project Structure
+
+### Highlights
+
+- Unit tests run entirely in node.js
+- Coverage tool covers everything, including templates
+
+### Mojo Modules Used
+
+- [mojo-application](https://github.com/classdojo/mojo-router) - Main entry point to application
+- [mojo-models](https://github.com/classdojo/mojo-models) - Models
+- [mojo-views](https://github.com/classdojo/mojo-views) - View Controller
+- [mojo-paperclip](https://github.com/classdojo/mojo-views) - Template engine
+- [mojo-router](https://github.com/classdojo/mojo-router) - http router
+- [mojo-mediator](https://github.com/classdojo/mojo-mediator) - commands / mediator
+
+
+### Project Structure
 
 ```
 app/
@@ -23,40 +39,19 @@ test/
 ```
 
 
-## Installation
+### Installation
 
 ```
 git clone git@github.com:classdojo/mojo-todomvc-example.git && cd mojo-todomvc-example && npm install;
 ```
 
-## Building
-
-To build your application, simply run:
+### Commands
 
 ```
-npm run build
-```
-
-## Debugging
-
-The easiest way to debug your application is run:
-
-```
-npm start
-```
-
-This will open up an http server `http://localhost:8080` which you can visit in your browser.
-
-You can also use the built-in hotswap script which will automatically refresh all resources if they change:
-
-```
-npm run hotswap
-```
-
-Note that the above command assumes that you're already running `npm start`.
-
-## Testing
-
-```
-npm test
+npm start - starts the todoMVC http server on port 8085
+npm test  - runs all the todoMVC tests
+npm run hotswap - runs the hotswap script for debugging
+npm run build - builds the application as one js file
+make test-cov - build coverage report
+make test-watch - run the tests & re-run whenever a file changes
 ```
