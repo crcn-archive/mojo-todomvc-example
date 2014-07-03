@@ -3,27 +3,28 @@ var Application = require("mojo-application");
 require("paperclip");
 
 module.exports = Application.extend({
-  registerPlugins: function () {
+  plugins: [
 
     // globally accessible functions
-    this.use(require("mojo-mediator"));
-    this.use(require("mojo-bootstrap"))
+    require("mojo-mediator"),
+    require("mojo-bootstrap"),
 
     // models
-    this.use(require("mojo-models"))
+    require("mojo-models"),
 
     // view controller
-    this.use(require("mojo-views"))
+    require("mojo-views"),
 
-    // templates
-    this.use(require("mojo-paperclip"));
+    // template engine
+    require("mojo-paperclip"),
 
-    // HTTP router
-    this.use(require("mojo-router"));
+    // HTTP Router - maintains application state
+    require("mojo-router"),
 
-    this.use(require("./commands"));
-    this.use(require("./models"));
-    this.use(require("./views"));
-    this.use(require("./routes"));
-  }
+    // app specific stuff
+    require("./commands"),
+    require("./models"),
+    require("./views"),
+    require("./routes")
+  ]
 });
