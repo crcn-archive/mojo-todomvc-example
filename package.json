@@ -29,7 +29,8 @@
     "pouchdb": "2.2.3",
     "mojo-cli": "0.0.x",
     "bindable": "0.5.x",
-    "paperclip": "0.3.x"
+    "paperclip": "0.3.x",
+    "noselector": "0.0.11"
   },
   "devDependencies": {
     "expect.js": "0.3.1",
