@@ -5,7 +5,7 @@ http://mojo-todomvc-example.herokuapp.com/
 ### Mojo.js Resources
 
 - [documentation](http://mojo-docs.herokuapp.com/)
-- [starter kit](https://github.com/classdojo/mojo-starter)
+- [starter kit](https://github.com/mojo-js/mojo-starter)
 
 ### Requirements
 
@@ -19,12 +19,12 @@ http://mojo-todomvc-example.herokuapp.com/
 
 ### Mojo Modules Used
 
-- [mojo-application](https://github.com/classdojo/mojo-router) - Main entry point to application
-- [mojo-models](https://github.com/classdojo/mojo-models) - Models
-- [mojo-views](https://github.com/classdojo/mojo-views) - View Controller
-- [mojo-paperclip](https://github.com/classdojo/mojo-views) - Template engine
-- [mojo-router](https://github.com/classdojo/mojo-router) - http router
-- [mojo-mediator](https://github.com/classdojo/mojo-mediator) - commands / mediator
+- [mojo-application](https://github.com/mojo-js/mojo-router) - Main entry point to application
+- [mojo-models](https://github.com/mojo-js/mojo-models) - Models
+- [mojo-views](https://github.com/mojo-js/mojo-views) - View Controller
+- [mojo-paperclip](https://github.com/mojo-js/mojo-views) - Template engine
+- [mojo-router](https://github.com/mojo-js/mojo-router) - http router
+- [mojo-mediator](https://github.com/mojo-js/mojo-mediator) - commands / mediator
 
 
 ### Project Structure
@@ -47,7 +47,7 @@ test/
 ### Installation
 
 ```
-git clone git@github.com:classdojo/mojo-todomvc-example.git && cd mojo-todomvc-example && npm install;
+git clone git@github.com:mojo-js/mojo-todomvc-example.git && cd mojo-todomvc-example && npm install;
 ```
 
 ### Commands
