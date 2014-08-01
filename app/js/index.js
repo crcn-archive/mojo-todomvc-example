@@ -3,28 +3,27 @@ var Application = require("mojo-application");
 require("paperclip");
 
 module.exports = Application.extend({
+
+  /**
+   */
+
   plugins: [
-
-    // globally accessible functions
-    require("mojo-mediator"),
-    require("mojo-bootstrap"),
-
-    // models
-    require("mojo-models"),
-
-    // view controller
-    require("mojo-views"),
-
-    // template engine
-    require("mojo-paperclip"),
-
-    // HTTP Router - maintains application state
-    require("mojo-router"),
-
-    // app specific stuff
-    require("./commands"),
-    require("./models"),
+    require("mojo-bootstrap"), // initializes the application, and calls didBootstrap
+    require("mojo-models"),    // model data
+    require("mojo-views"),     // view controllers - maintains application view structure
+    require("mojo-paperclip"), // template engine
+    require("mojo-router"),    // HTTP router - maintains application state
+    require("./models"),    
     require("./views"),
     require("./routes")
-  ]
+  ],
+
+  /**
+   */
+
+  didBootstrap: function (options) {
+    $(options.element).append(app.views.create("main", {
+      todos: this.models.create("todos").load()
+    }).render());
+  }
 });
