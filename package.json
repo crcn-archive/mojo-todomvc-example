@@ -19,11 +19,11 @@
   "dependencies": {
     "mojo-application": "0.0.x",
     "mojo-paperclip": "0.4.x",
-    "mojo-views": "0.0.x",
+    "mojo-views": "0.1.x",
     "mojo-router": "0.3.x",
     "mojo-mediator": "0.0.x",
     "mkdirp": "0.5.0",
-    "mojo-models": "0.0.x",
+    "mojo-models": "0.1.x",
     "mojo-bootstrap": "0.0.x",
     "sift": "0.0.x",
     "pouchdb": "2.2.3",

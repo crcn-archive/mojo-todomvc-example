@@ -1,6 +1,6 @@
 var Application = require("./index");
 
-var app = new Application();
+var app = global.app = new Application();
 
 app.initialize({ 
   element: document.body 
