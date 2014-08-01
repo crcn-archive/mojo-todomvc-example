@@ -61,9 +61,8 @@ describe("unit/views/header#", function () {
       var todos = app.models.create("todos");
 
       var parent = new views.Base({ todos: todos }, app),
-      header     = new HeaderView(null, app);
+      header     = new HeaderView({ parent : parent }, app);
 
-      parent.setChild("header", header);
 
       var createStub = sinon.stub(todos, "create").returns({ save: function(){} });
 
