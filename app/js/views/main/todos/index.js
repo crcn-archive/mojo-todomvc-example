@@ -32,7 +32,7 @@ module.exports = views.Base.extend({
       type: "list",
       source: "todos",
       filter: "models.todosFilter",
-      modelViewFactory: pool
+      modelViewClass: require("./todo")
     }
   }
 });
