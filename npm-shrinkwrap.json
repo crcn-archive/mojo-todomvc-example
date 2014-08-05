@@ -3,28 +3,28 @@
   "version": "0.1.2",
   "dependencies": {
     "bindable": {
-      "version": "0.5.38",
-      "from": "http://registry.npmjs.org/bindable/-/bindable-0.5.38.tgz",
-      "resolved": "http://registry.npmjs.org/bindable/-/bindable-0.5.38.tgz",
+      "version": "0.5.42",
+      "from": "bindable@0.5.x",
+      "resolved": "http://registry.npmjs.org/bindable/-/bindable-0.5.42.tgz",
       "dependencies": {
         "underscore": {
           "version": "1.4.4",
-          "from": "underscore@1.4.4",
+          "from": "underscore@~1.4.4",
           "resolved": "http://registry.npmjs.org/underscore/-/underscore-1.4.4.tgz"
         },
         "toarray": {
           "version": "0.0.1",
-          "from": "http://registry.npmjs.org/toarray/-/toarray-0.0.1.tgz",
+          "from": "toarray@0.0.1",
           "resolved": "http://registry.npmjs.org/toarray/-/toarray-0.0.1.tgz"
         },
         "outcome": {
           "version": "0.0.18",
-          "from": "http://registry.npmjs.org/outcome/-/outcome-0.0.18.tgz",
+          "from": "outcome@0.0.x",
           "resolved": "http://registry.npmjs.org/outcome/-/outcome-0.0.18.tgz"
         },
         "type-component": {
           "version": "0.0.1",
-          "from": "type-component@0.0.1",
+          "from": "type-component@0.0.x",
           "resolved": "http://registry.npmjs.org/type-component/-/type-component-0.0.1.tgz"
         },
         "protoclass": {
@@ -1118,39 +1118,39 @@
       }
     },
     "mojo-models": {
-      "version": "0.1.28",
-      "from": "mojo-models@0.1.28",
-      "resolved": "http://registry.npmjs.org/mojo-models/-/mojo-models-0.1.28.tgz",
+      "version": "0.1.29",
+      "from": "mojo-models@0.1.x",
+      "resolved": "http://registry.npmjs.org/mojo-models/-/mojo-models-0.1.29.tgz",
       "dependencies": {
         "frills": {
           "version": "0.0.3",
-          "from": "frills@0.0.3",
+          "from": "frills@0.0.x",
           "resolved": "http://registry.npmjs.org/frills/-/frills-0.0.3.tgz",
           "dependencies": {
             "protoclass": {
               "version": "0.0.5",
-              "from": "protoclass@0.0.5",
-              "resolved": "http://registry.npmjs.org/protoclass/-/protoclass-0.0.5.tgz"
+              "from": "protoclass@0.0.x"
             }
           }
         },
         "mojo-registered-classes": {
           "version": "0.0.3",
-          "from": "mojo-registered-classes@0.0.3",
+          "from": "mojo-registered-classes@0.0.x",
           "resolved": "http://registry.npmjs.org/mojo-registered-classes/-/mojo-registered-classes-0.0.3.tgz"
         },
         "lodash": {
           "version": "2.4.1",
-          "from": "lodash@2.4.1"
+          "from": "lodash@2.4.1",
+          "resolved": "http://registry.npmjs.org/lodash/-/lodash-2.4.1.tgz"
         },
         "janitorjs": {
           "version": "0.0.4",
-          "from": "janitorjs@0.0.4",
+          "from": "janitorjs@0.0.x",
+          "resolved": "http://registry.npmjs.org/janitorjs/-/janitorjs-0.0.4.tgz",
           "dependencies": {
             "protoclass": {
               "version": "0.0.5",
-              "from": "protoclass@0.0.5",
-              "resolved": "http://registry.npmjs.org/protoclass/-/protoclass-0.0.5.tgz"
+              "from": "protoclass@0.0.x"
             },
             "type-component": {
               "version": "0.0.1",
@@ -1161,32 +1161,36 @@
         },
         "bindable-decor-bindings": {
           "version": "0.1.4",
-          "from": "bindable-decor-bindings@0.1.4",
+          "from": "bindable-decor-bindings@0.1.x",
           "resolved": "http://registry.npmjs.org/bindable-decor-bindings/-/bindable-decor-bindings-0.1.4.tgz",
           "dependencies": {
             "traverse": {
               "version": "0.6.6",
-              "from": "traverse@0.6.6"
+              "from": "traverse@~0.6.6",
+              "resolved": "http://registry.npmjs.org/traverse/-/traverse-0.6.6.tgz"
             },
             "disposable": {
               "version": "0.0.5",
-              "from": "disposable@0.0.5"
+              "from": "disposable@0.0.5",
+              "resolved": "http://registry.npmjs.org/disposable/-/disposable-0.0.5.tgz"
             }
           }
         },
         "hurryup": {
           "version": "0.0.5",
-          "from": "hurryup@0.0.5",
+          "from": "hurryup@0.0.x",
+          "resolved": "http://registry.npmjs.org/hurryup/-/hurryup-0.0.5.tgz",
           "dependencies": {
             "comerr": {
               "version": "0.0.6",
-              "from": "comerr@0.0.6"
+              "from": "comerr@0.0.x",
+              "resolved": "http://registry.npmjs.org/comerr/-/comerr-0.0.6.tgz"
             }
           }
         },
         "async": {
           "version": "0.7.0",
-          "from": "async@0.7.0",
+          "from": "async@0.7.x",
           "resolved": "http://registry.npmjs.org/async/-/async-0.7.0.tgz"
         }
       }
@@ -1384,13 +1388,12 @@
       }
     },
     "mojo-views": {
-      "version": "0.1.9",
-      "from": "mojo-views@0.1.9",
+      "version": "0.1.14",
+      "from": "mojo-views@0.1.x",
       "dependencies": {
         "type-component": {
           "version": "0.0.1",
-          "from": "http://registry.npmjs.org/type-component/-/type-component-0.0.1.tgz",
-          "resolved": "http://registry.npmjs.org/type-component/-/type-component-0.0.1.tgz"
+          "from": "type-component@0.0.x"
         },
         "janitorjs": {
           "version": "0.0.4",
@@ -1398,8 +1401,7 @@
         },
         "factories": {
           "version": "0.0.7",
-          "from": "http://registry.npmjs.org/factories/-/factories-0.0.7.tgz",
-          "resolved": "http://registry.npmjs.org/factories/-/factories-0.0.7.tgz",
+          "from": "factories@0.0.x",
           "dependencies": {
             "protoclass": {
               "version": "0.0.2",
@@ -1408,30 +1410,26 @@
           }
         },
         "loaf": {
-          "version": "0.2.2",
-          "from": "loaf@0.2.2",
-          "resolved": "http://registry.npmjs.org/loaf/-/loaf-0.2.2.tgz"
+          "version": "0.2.4",
+          "from": "loaf@0.2.x"
         },
         "nofactor": {
-          "version": "0.0.43",
-          "from": "nofactor@0.0.43",
-          "resolved": "http://registry.npmjs.org/nofactor/-/nofactor-0.0.43.tgz",
+          "version": "0.0.44",
+          "from": "nofactor@0.0.x",
           "dependencies": {
             "he": {
               "version": "0.4.1",
-              "from": "he@0.4.1",
-              "resolved": "http://registry.npmjs.org/he/-/he-0.4.1.tgz"
+              "from": "he@~0.4.1"
             }
           }
         },
         "bindable-decor-bindings": {
           "version": "0.1.4",
-          "from": "bindable-decor-bindings@0.1.4",
-          "resolved": "http://registry.npmjs.org/bindable-decor-bindings/-/bindable-decor-bindings-0.1.4.tgz",
+          "from": "bindable-decor-bindings@0.1.x",
           "dependencies": {
             "traverse": {
               "version": "0.6.6",
-              "from": "traverse@0.6.6"
+              "from": "traverse@~0.6.6"
             },
             "disposable": {
               "version": "0.0.5",
@@ -1441,30 +1439,25 @@
         },
         "underscore": {
           "version": "1.4.4",
-          "from": "underscore@1.4.4",
-          "resolved": "http://registry.npmjs.org/underscore/-/underscore-1.4.4.tgz"
+          "from": "underscore@1.4.x"
         },
         "protoclass": {
           "version": "0.0.5",
-          "from": "http://registry.npmjs.org/protoclass/-/protoclass-0.0.5.tgz",
-          "resolved": "http://registry.npmjs.org/protoclass/-/protoclass-0.0.5.tgz"
+          "from": "protoclass@0.0.5"
         },
         "subindable": {
           "version": "0.1.6",
-          "from": "subindable@0.1.6",
-          "resolved": "http://registry.npmjs.org/subindable/-/subindable-0.1.6.tgz",
+          "from": "subindable@0.1.x",
           "dependencies": {
             "underscore": {
               "version": "1.5.2",
-              "from": "underscore@1.5.2",
-              "resolved": "http://registry.npmjs.org/underscore/-/underscore-1.5.2.tgz"
+              "from": "underscore@~1.5.2"
             }
           }
         },
         "runlater": {
           "version": "0.0.12",
-          "from": "runlater@0.0.12",
-          "resolved": "http://registry.npmjs.org/runlater/-/runlater-0.0.12.tgz",
+          "from": "runlater@0.0.x",
           "dependencies": {
             "boojs": {
               "version": "0.0.7",
@@ -1474,8 +1467,7 @@
         },
         "poolparty": {
           "version": "0.0.9",
-          "from": "poolparty@0.0.9",
-          "resolved": "http://registry.npmjs.org/poolparty/-/poolparty-0.0.9.tgz",
+          "from": "poolparty@0.0.x",
           "dependencies": {
             "boojs": {
               "version": "0.0.7",
@@ -1489,18 +1481,15 @@
         },
         "boojs": {
           "version": "0.0.8",
-          "from": "boojs@0.0.8",
-          "resolved": "http://registry.npmjs.org/boojs/-/boojs-0.0.8.tgz"
+          "from": "boojs@0.0.x"
         },
         "async": {
           "version": "0.9.0",
-          "from": "async@0.9.0",
-          "resolved": "http://registry.npmjs.org/async/-/async-0.9.0.tgz"
+          "from": "async@0.x.x"
         },
         "mojo-animator": {
           "version": "0.0.1",
-          "from": "mojo-animator@0.0.1",
-          "resolved": "http://registry.npmjs.org/mojo-animator/-/mojo-animator-0.0.1.tgz"
+          "from": "mojo-animator@0.0.x"
         },
         "frills": {
           "version": "0.0.2",
@@ -1508,8 +1497,7 @@
         },
         "mojo-registered-classes": {
           "version": "0.0.3",
-          "from": "mojo-registered-classes@0.0.3",
-          "resolved": "http://registry.npmjs.org/mojo-registered-classes/-/mojo-registered-classes-0.0.3.tgz"
+          "from": "mojo-registered-classes@0.0.x"
         }
       }
     },
