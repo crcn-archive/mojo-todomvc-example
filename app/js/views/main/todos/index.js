@@ -1,4 +1,21 @@
-var views = require("mojo-views");
+var views = require("mojo-views"),
+poolparty = require("poolparty");
+
+var TodoView = require("./todo");
+
+var pool = poolparty({
+  max: 1000,
+  create: function (options) {
+    var view = new TodoView(options);
+    view.on("dispose", function () {
+      pool.add(view);
+    });
+    return view;
+  }, 
+  recycle: function (view, options) {
+    view.setProperties(options);
+  }
+});
 
 module.exports = views.Base.extend({
 
@@ -15,7 +32,7 @@ module.exports = views.Base.extend({
       type: "list",
       source: "todos",
       filter: "models.todosFilter",
-      modelViewClass: require("./todo")
+      modelViewFactory: pool
     }
   }
 });

@@ -30,7 +30,8 @@
     "mojo-cli": "0.0.x",
     "bindable": "0.5.x",
     "paperclip": "0.3.x",
-    "noselector": "0.0.11"
+    "noselector": "0.0.11",
+    "poolparty": "0.0.9"
   },
   "devDependencies": {
     "expect.js": "0.3.1",
