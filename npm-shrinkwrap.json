@@ -1388,7 +1388,7 @@
       }
     },
     "mojo-views": {
-      "version": "0.1.14",
+      "version": "0.1.15",
       "from": "mojo-views@0.1.x",
       "dependencies": {
         "type-component": {
@@ -1397,29 +1397,35 @@
         },
         "janitorjs": {
           "version": "0.0.4",
-          "from": "janitorjs@0.0.4"
+          "from": "janitorjs@0.0.4",
+          "resolved": "http://registry.npmjs.org/janitorjs/-/janitorjs-0.0.4.tgz"
         },
         "factories": {
           "version": "0.0.7",
           "from": "factories@0.0.x",
+          "resolved": "http://registry.npmjs.org/factories/-/factories-0.0.7.tgz",
           "dependencies": {
             "protoclass": {
               "version": "0.0.2",
-              "from": "protoclass@0.0.2"
+              "from": "protoclass@0.0.2",
+              "resolved": "http://registry.npmjs.org/protoclass/-/protoclass-0.0.2.tgz"
             }
           }
         },
         "loaf": {
           "version": "0.2.4",
-          "from": "loaf@0.2.x"
+          "from": "loaf@0.2.x",
+          "resolved": "http://registry.npmjs.org/loaf/-/loaf-0.2.4.tgz"
         },
         "nofactor": {
           "version": "0.0.44",
           "from": "nofactor@0.0.x",
+          "resolved": "http://registry.npmjs.org/nofactor/-/nofactor-0.0.44.tgz",
           "dependencies": {
             "he": {
               "version": "0.4.1",
-              "from": "he@~0.4.1"
+              "from": "he@~0.4.1",
+              "resolved": "http://registry.npmjs.org/he/-/he-0.4.1.tgz"
             }
           }
         },
@@ -1448,26 +1454,19 @@
         "subindable": {
           "version": "0.1.6",
           "from": "subindable@0.1.x",
+          "resolved": "http://registry.npmjs.org/subindable/-/subindable-0.1.6.tgz",
           "dependencies": {
             "underscore": {
               "version": "1.5.2",
-              "from": "underscore@~1.5.2"
+              "from": "underscore@~1.5.2",
+              "resolved": "http://registry.npmjs.org/underscore/-/underscore-1.5.2.tgz"
             }
           }
         },
         "runlater": {
           "version": "0.0.12",
           "from": "runlater@0.0.x",
-          "dependencies": {
-            "boojs": {
-              "version": "0.0.7",
-              "from": "boojs@0.0.7"
-            }
-          }
-        },
-        "poolparty": {
-          "version": "0.0.9",
-          "from": "poolparty@0.0.x",
+          "resolved": "http://registry.npmjs.org/runlater/-/runlater-0.0.12.tgz",
           "dependencies": {
             "boojs": {
               "version": "0.0.7",
@@ -1477,23 +1476,28 @@
         },
         "flatstack": {
           "version": "0.0.10",
-          "from": "flatstack@0.0.10"
+          "from": "flatstack@0.0.10",
+          "resolved": "http://registry.npmjs.org/flatstack/-/flatstack-0.0.10.tgz"
         },
         "boojs": {
           "version": "0.0.8",
-          "from": "boojs@0.0.x"
+          "from": "boojs@0.0.x",
+          "resolved": "http://registry.npmjs.org/boojs/-/boojs-0.0.8.tgz"
         },
         "async": {
           "version": "0.9.0",
-          "from": "async@0.x.x"
+          "from": "async@0.x.x",
+          "resolved": "http://registry.npmjs.org/async/-/async-0.9.0.tgz"
         },
         "mojo-animator": {
           "version": "0.0.1",
-          "from": "mojo-animator@0.0.x"
+          "from": "mojo-animator@0.0.x",
+          "resolved": "http://registry.npmjs.org/mojo-animator/-/mojo-animator-0.0.1.tgz"
         },
         "frills": {
           "version": "0.0.2",
-          "from": "frills@0.0.2"
+          "from": "frills@0.0.2",
+          "resolved": "http://registry.npmjs.org/frills/-/frills-0.0.2.tgz"
         },
         "mojo-registered-classes": {
           "version": "0.0.3",
@@ -2435,6 +2439,22 @@
           "version": "0.0.1",
           "from": "http://registry.npmjs.org/mojo-animator/-/mojo-animator-0.0.1.tgz",
           "resolved": "http://registry.npmjs.org/mojo-animator/-/mojo-animator-0.0.1.tgz"
+        }
+      }
+    },
+    "poolparty": {
+      "version": "0.0.9",
+      "from": "poolparty@",
+      "resolved": "http://registry.npmjs.org/poolparty/-/poolparty-0.0.9.tgz",
+      "dependencies": {
+        "protoclass": {
+          "version": "0.0.5",
+          "from": "protoclass@0.0.x"
+        },
+        "boojs": {
+          "version": "0.0.7",
+          "from": "boojs@0.0.7",
+          "resolved": "http://registry.npmjs.org/boojs/-/boojs-0.0.7.tgz"
         }
       }
     },
