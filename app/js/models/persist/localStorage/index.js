@@ -40,7 +40,7 @@ exports.model = function () {
           storage.get(data._id, function (err, doc) {
             if (err) return complete(err);
             storage.put(data, doc._rev, function (err) {
-              if (err) return compete(err);
+              if (err) return complete(err);
               complete(null, data);
             });
           });
