@@ -2,6 +2,9 @@ ALL_TESTS = $(shell find ./test/unit -name "*-test.js")
 REPORTER="dot"
 ONLY=.
 
+build-app:
+	./node_modules/.bin/mojo build ./app/js/entry.js -m --output=build/app.min.js
+
 test-node:
 	APP_DIR=app ./node_modules/.bin/mocha $(ALL_TESTS) --reporter=$(REPORTER) -g $(ONLY) --bail
 

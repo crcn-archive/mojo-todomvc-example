@@ -5,7 +5,7 @@
   "scripts": {
     "test": "make test-node",
     "start": "./node_modules/.bin/mojo build ./app/js/entry.js --output=build/app.min.js --serve=build --port=8085",
-    "build": "./node_modules/.bin/mojo build ./app/js/entry.js -m --output=build/app.min.js",
+    "build": "build-app",
     "hotswap": "./node_modules/.bin/ditto-proxy http://127.0.0.1:8085 --port=8090 --verbose --watch='./app/**'"
   },
   "repository": {
@@ -18,9 +18,9 @@
   "gitHead": "f685d2e601df0d0e91f7a4a07f5c696e67e81bb0",
   "dependencies": {
     "mojo-application": "0.0.x",
-    "mojo-paperclip": "0.4.x",
+    "mojo-paperclip": "0.5.x",
     "mojo-views": "0.1.x",
-    "mojo-router": "0.3.x",
+    "mojo-router": "0.5.x",
     "mojo-mediator": "0.0.x",
     "mkdirp": "0.5.0",
     "mojo-models": "0.1.x",
@@ -29,7 +29,7 @@
     "pouchdb": "2.2.3",
     "mojo-cli": "0.0.x",
     "bindable": "0.5.x",
-    "paperclip": "0.3.x",
+    "paperclip": "0.4.x",
     "noselector": "0.0.11",
     "poolparty": "0.0.9"
   },

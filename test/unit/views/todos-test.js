@@ -38,10 +38,10 @@ describe("unit/views/todos#", function () {
       var filter;
       var todosView = new TodosView({ todos: todos }, app);
       todosView.render();
-      app.models.set("todosFilter", filter = function () {
+      app.models.set("todosFilter", function () {
 
       });
-      expect(todosView.get("sections.items._filter")).to.be(filter);
+      expect(todosView.get("sections.items._filter")).not.to.be(void 0);
     });
   });
 });

@@ -37,13 +37,16 @@ describe("unit/views/footer#", function () {
     });
 
     "allTodos activeTodos completedTodos".split(" ").forEach(function(dataHref) {
-      it("can navigate to " + dataHref + " when selected", function () {
+      it("can navigate to " + dataHref + " when selected", function (next) {
         var todos = app.models.create("todos");
         todos.create({ completed: true });
         var footer = new FooterView({ todos: todos }, app);
         footer.render();
         footer.$("a[data-href='"+dataHref+"']").click();
-        expect(app.router.get("_location.route.options.name")).to.be(dataHref);
+        setTimeout(function () {
+          expect(app.router.get("location.route.options.name")).to.be(dataHref);
+          next();
+        }, 5);
       });
     });
 
