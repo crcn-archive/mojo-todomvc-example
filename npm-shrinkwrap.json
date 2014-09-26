@@ -24,7 +24,7 @@
         },
         "type-component": {
           "version": "0.0.1",
-          "from": "type-component@0.0.1",
+          "from": "type-component@0.0.x",
           "resolved": "http://registry.npmjs.org/type-component/-/type-component-0.0.1.tgz"
         },
         "protoclass": {
@@ -63,7 +63,7 @@
             },
             "factories": {
               "version": "0.0.7",
-              "from": "factories@0.0.x",
+              "from": "factories@0.0.7",
               "resolved": "http://registry.npmjs.org/factories/-/factories-0.0.7.tgz",
               "dependencies": {
                 "type-component": {
@@ -88,13 +88,14 @@
       }
     },
     "mojo-bootstrap": {
-      "version": "0.0.6",
+      "version": "0.0.8",
       "from": "mojo-bootstrap@0.0.x",
-      "resolved": "http://registry.npmjs.org/mojo-bootstrap/-/mojo-bootstrap-0.0.6.tgz"
+      "resolved": "http://registry.npmjs.org/mojo-bootstrap/-/mojo-bootstrap-0.0.8.tgz"
     },
     "mojo-cli": {
-      "version": "0.0.19",
+      "version": "0.0.21",
       "from": "mojo-cli@0.0.x",
+      "resolved": "http://registry.npmjs.org/mojo-cli/-/mojo-cli-0.0.21.tgz",
       "dependencies": {
         "async": {
           "version": "0.9.0",
@@ -308,7 +309,7 @@
                 },
                 "minimist": {
                   "version": "0.0.10",
-                  "from": "minimist@~0.0.1",
+                  "from": "minimist@~0.0.7",
                   "resolved": "http://registry.npmjs.org/minimist/-/minimist-0.0.10.tgz"
                 }
               }
@@ -410,7 +411,7 @@
             },
             "inherits": {
               "version": "2.0.1",
-              "from": "inherits@~2.0.1",
+              "from": "inherits@2",
               "resolved": "http://registry.npmjs.org/inherits/-/inherits-2.0.1.tgz"
             },
             "insert-module-globals": {
@@ -632,7 +633,7 @@
               "dependencies": {
                 "minimist": {
                   "version": "0.0.10",
-                  "from": "minimist@~0.0.1",
+                  "from": "minimist@~0.0.7",
                   "resolved": "http://registry.npmjs.org/minimist/-/minimist-0.0.10.tgz"
                 }
               }
@@ -788,7 +789,7 @@
           "dependencies": {
             "ms": {
               "version": "0.6.2",
-              "from": "ms@0.6.2",
+              "from": "ms@~0.6.2",
               "resolved": "http://registry.npmjs.org/ms/-/ms-0.6.2.tgz"
             },
             "mold-source-map": {
@@ -2140,7 +2141,7 @@
           "dependencies": {
             "type-component": {
               "version": "0.0.1",
-              "from": "type-component@0.0.1",
+              "from": "type-component@0.0.x",
               "resolved": "http://registry.npmjs.org/type-component/-/type-component-0.0.1.tgz"
             },
             "async": {
@@ -2249,7 +2250,7 @@
       "dependencies": {
         "type-component": {
           "version": "0.0.1",
-          "from": "type-component@0.0.1",
+          "from": "type-component@0.0.x",
           "resolved": "http://registry.npmjs.org/type-component/-/type-component-0.0.1.tgz"
         },
         "protoclass": {
@@ -2260,9 +2261,9 @@
       }
     },
     "mojo-router": {
-      "version": "0.5.2",
+      "version": "0.5.4",
       "from": "mojo-router@0.5.x",
-      "resolved": "http://registry.npmjs.org/mojo-router/-/mojo-router-0.5.2.tgz",
+      "resolved": "http://registry.npmjs.org/mojo-router/-/mojo-router-0.5.4.tgz",
       "dependencies": {
         "async": {
           "version": "0.7.0",
@@ -2270,9 +2271,9 @@
           "resolved": "http://registry.npmjs.org/async/-/async-0.7.0.tgz"
         },
         "crowbar": {
-          "version": "0.1.31",
+          "version": "0.1.33",
           "from": "crowbar@0.1.x",
-          "resolved": "http://registry.npmjs.org/crowbar/-/crowbar-0.1.31.tgz",
+          "resolved": "http://registry.npmjs.org/crowbar/-/crowbar-0.1.33.tgz",
           "dependencies": {
             "protoclass": {
               "version": "0.0.5",
@@ -2403,7 +2404,7 @@
             },
             "hasher": {
               "version": "1.2.0",
-              "from": "hasher@~1.2.0",
+              "from": "hasher@1.2.0",
               "resolved": "http://registry.npmjs.org/hasher/-/hasher-1.2.0.tgz",
               "dependencies": {
                 "signals": {
@@ -2415,7 +2416,7 @@
             },
             "outcome": {
               "version": "0.0.18",
-              "from": "outcome@0.0.x",
+              "from": "outcome@0.0.18",
               "resolved": "http://registry.npmjs.org/outcome/-/outcome-0.0.18.tgz"
             }
           }
@@ -2427,7 +2428,7 @@
         },
         "janitorjs": {
           "version": "0.0.4",
-          "from": "janitorjs@0.0.4",
+          "from": "janitorjs@0.0.x",
           "resolved": "http://registry.npmjs.org/janitorjs/-/janitorjs-0.0.4.tgz",
           "dependencies": {
             "protoclass": {
@@ -2576,7 +2577,7 @@
             },
             "hasher": {
               "version": "1.2.0",
-              "from": "hasher@~1.2.0",
+              "from": "hasher@1.2.0",
               "resolved": "http://registry.npmjs.org/hasher/-/hasher-1.2.0.tgz",
               "dependencies": {
                 "signals": {
@@ -2602,12 +2603,12 @@
       "dependencies": {
         "type-component": {
           "version": "0.0.1",
-          "from": "type-component@0.0.1",
+          "from": "type-component@0.0.x",
           "resolved": "http://registry.npmjs.org/type-component/-/type-component-0.0.1.tgz"
         },
         "janitorjs": {
           "version": "0.0.4",
-          "from": "janitorjs@0.0.4",
+          "from": "janitorjs@0.0.x",
           "resolved": "http://registry.npmjs.org/janitorjs/-/janitorjs-0.0.4.tgz"
         },
         "factories": {
@@ -2936,7 +2937,7 @@
         },
         "type-component": {
           "version": "0.0.1",
-          "from": "type-component@0.0.1",
+          "from": "type-component@0.0.x",
           "resolved": "http://registry.npmjs.org/type-component/-/type-component-0.0.1.tgz"
         },
         "uglify-js": {
@@ -3123,7 +3124,7 @@
           "dependencies": {
             "abstract-leveldown": {
               "version": "0.12.4",
-              "from": "abstract-leveldown@~0.12.1",
+              "from": "abstract-leveldown@~0.12.0",
               "resolved": "http://registry.npmjs.org/abstract-leveldown/-/abstract-leveldown-0.12.4.tgz",
               "dependencies": {
                 "xtend": {
