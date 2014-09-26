@@ -23,7 +23,7 @@ module.exports = Application.extend({
 
   didBootstrap: function (options) {
     $(options.element).append(this.views.create("main", {
-      todos: this.models.create("todos").load()
+      todos: app.todos = this.models.create("todos").load()
     }).render());
   }
 });
