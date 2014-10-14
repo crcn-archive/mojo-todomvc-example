@@ -1,21 +1,6 @@
-var views = require("mojo-views"),
-poolparty = require("poolparty");
+var views = require("mojo-views");
 
 var TodoView = require("./todo");
-
-var pool = poolparty({
-  max: 1000,
-  create: function (options) {
-    var view = new TodoView(options);
-    view.on("dispose", function () {
-      pool.add(view);
-    });
-    return view;
-  }, 
-  recycle: function (view, options) {
-    view.setProperties(options);
-  }
-});
 
 module.exports = views.Base.extend({
 
