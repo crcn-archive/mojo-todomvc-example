@@ -2182,7 +2182,7 @@
       }
     },
     "mojo-models": {
-      "version": "0.3.7",
+      "version": "0.3.9",
       "from": "mojo-models@0.3.x",
       "dependencies": {
         "frills": {
@@ -2200,6 +2200,7 @@
         "mojo-registered-classes": {
           "version": "0.1.0",
           "from": "mojo-registered-classes@0.1.x",
+          "resolved": "http://registry.npmjs.org/mojo-registered-classes/-/mojo-registered-classes-0.1.0.tgz",
           "dependencies": {
             "uuid": {
               "version": "2.0.1",
@@ -2215,7 +2216,7 @@
         },
         "janitorjs": {
           "version": "0.0.4",
-          "from": "janitorjs@0.0.x",
+          "from": "janitorjs@0.0.4",
           "resolved": "http://registry.npmjs.org/janitorjs/-/janitorjs-0.0.4.tgz",
           "dependencies": {
             "protoclass": {
@@ -2267,9 +2268,8 @@
       }
     },
     "mojo-paperclip": {
-      "version": "0.6.3",
+      "version": "0.6.5",
       "from": "mojo-paperclip@0.6.x",
-      "resolved": "http://registry.npmjs.org/mojo-paperclip/-/mojo-paperclip-0.6.3.tgz",
       "dependencies": {
         "protoclass": {
           "version": "0.0.5",
@@ -2858,12 +2858,12 @@
       }
     },
     "mojo-views": {
-      "version": "0.2.5",
+      "version": "0.2.6",
       "from": "mojo-views@0.2.x",
       "dependencies": {
         "type-component": {
           "version": "0.0.1",
-          "from": "type-component@0.0.x",
+          "from": "type-component@0.0.1",
           "resolved": "http://registry.npmjs.org/type-component/-/type-component-0.0.1.tgz"
         },
         "janitorjs": {
@@ -2924,13 +2924,12 @@
         },
         "protoclass": {
           "version": "0.0.5",
-          "from": "protoclass@0.0.5",
+          "from": "protoclass@0.0.x",
           "resolved": "http://registry.npmjs.org/protoclass/-/protoclass-0.0.5.tgz"
         },
         "subindable": {
-          "version": "0.2.0",
+          "version": "0.2.1",
           "from": "subindable@0.2.x",
-          "resolved": "http://registry.npmjs.org/subindable/-/subindable-0.2.0.tgz",
           "dependencies": {
             "underscore": {
               "version": "1.5.2",
@@ -2979,6 +2978,7 @@
         "mojo-registered-classes": {
           "version": "0.1.0",
           "from": "mojo-registered-classes@0.1.x",
+          "resolved": "http://registry.npmjs.org/mojo-registered-classes/-/mojo-registered-classes-0.1.0.tgz",
           "dependencies": {
             "uuid": {
               "version": "2.0.1",
@@ -3006,7 +3006,7 @@
       }
     },
     "paperclip": {
-      "version": "0.5.13",
+      "version": "0.5.14",
       "from": "paperclip@0.5.x",
       "dependencies": {
         "async": {
